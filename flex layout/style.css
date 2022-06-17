@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lexend Deca', sans-serif;
+}
+main h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 20px;
+}
+main p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    width: 200px;
+    line-height: 1.5;
+    padding:10px 10px 80px;
+}
+main{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+    
+}
+div{
+    padding: 50px;
+}
+div img{
+    padding-bottom: 20px;
+}
+.top-container{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.top-container button{
+    color:hsl(31, 77%, 52%) ;
+}
+.middle-container{
+    background-color: hsl(184, 100%, 22%);
+}
+.middle-container button{
+    color:hsl(184, 100%, 22%) ;
+}
+
+.bottom-container{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+.bottom-container button{
+    color: hsl(179, 100%, 13%);
+}
+main button{
+    background-color:hsl(0, 0%, 95%) ;
+    border-radius: 30px;
+    padding:10px 30px;
+    border:2px solid hsl(0, 0%, 95%);  
+}
+.top-container button:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(31, 77%, 52%);
+}
+.middle-container button:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color:hsl(184, 100%, 22%) ;
+}
+.bottom-container button:hover{
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+@media (max-width:1140px) {
+    main{
+        flex-direction: row;
+    }
+    
+}
+@media (max-width:375px) {
+    main{
+        flex-direction: column;
+        height:50% ;
+    }
+    
+}
